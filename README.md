@@ -1,2 +1,4 @@
 # sqlboltpractice
-just revisiting sql 
+just revisiting sql
+
+brushing up on some things before i start a bookstore database. 
