@@ -1,0 +1,2 @@
+# sqlboltpractice
+just revisiting sql 
