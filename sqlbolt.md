@@ -416,3 +416,45 @@ Chicago	2718782
 Houston	2195914
 
 ```
+#### List all directors of Pixar movies (alphabetically), without duplicates
+```
+SELECT DISTINCT director FROM movies
+OORDER BY director ASC;
+
+Table: Movies
+Director
+Andrew Stanton
+Brad Bird
+Brenda Chapman
+Dan Scanlon
+John Lasseter
+Lee Unkrich
+Pete Docter
+```
+
+#### List the last four Pixar movies released (ordered from most recent to least)
+```
+SELECT title, year FROM movies
+ORDER BY year DESC
+LIMIT 4;
+```
+
+#### List the first five Pixar movies sorted alphabetically
+```
+SELECT title, year FROM movies
+ORDER BY title ASC
+LIMIT 5;
+```
+#### List the next five Pixar movies sorted alphabetically
+```
+SELECT title, year FROM movies
+ORDER BY title ASC
+LIMIT 5 OFFSET 5;
+
+Title	Year
+Monsters University	2013
+Monsters, Inc.	2001
+Ratatouille	2007
+The Incredibles	2004
+Toy Story	1995
+```
